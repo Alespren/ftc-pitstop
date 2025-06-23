@@ -38,7 +38,7 @@ interface OPRData {
 export function OPRModule({ opr, dpr, ccwm, matchesPlayed, loading, error }: { opr: number | undefined, dpr: number | undefined, matchesPlayed: number | undefined, ccwm: number | undefined, loading: boolean, error: string | null }) {
   if (loading) {
     return (
-      <div className="text-center py-8">
+      <div className="text-center py-8 h-full flex flex-col justify-center">
         <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-purple-500 dark:border-purple-300 mx-auto mb-4"></div>
         <p>Calculating OPR statistics...</p>
       </div>
@@ -118,7 +118,7 @@ export function OPRModule({ opr, dpr, ccwm, matchesPlayed, loading, error }: { o
 export function OPRSmallModule({ opr, dpr, ccwm, matchesPlayed, loading, error }: { opr: number | undefined, dpr: number | undefined, matchesPlayed: number | undefined, ccwm: number | undefined, loading: boolean, error: string | null }) {
   if (loading) {
     return (
-      <div className="text-center py-8">
+      <div className="text-center py-8 h-full flex flex-col justify-center">
         <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-purple-500 dark:border-purple-300 mx-auto mb-4"></div>
         <p>Calculating OPR statistics...</p>
       </div>

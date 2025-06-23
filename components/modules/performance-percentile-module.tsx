@@ -7,7 +7,7 @@ import { Trophy, AlertTriangle, BarChart3 } from "lucide-react"
 export function RankModule({ data, teamNumber, error, loading }: { data: ComparisonData | null, teamNumber: number, error: string | null, loading: boolean }) {
   if (loading) {
     return (
-      <div className="text-center py-8">
+      <div className="text-center py-8 h-full flex flex-col justify-center">
         <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mx-auto mb-4"></div>
         <p>Loading team comparison data...</p>
       </div>
@@ -55,7 +55,7 @@ export function RankModule({ data, teamNumber, error, loading }: { data: Compari
 export function WinRateModule({ data, teamNumber, error, loading }: { data: ComparisonData | null, teamNumber: number, error: string | null, loading: boolean }) {
   if (loading) {
     return (
-      <div className="text-center py-8">
+      <div className="text-center py-8 h-full flex flex-col justify-center">
         <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mx-auto mb-4"></div>
         <p>Loading team comparison data...</p>
       </div>
@@ -103,7 +103,7 @@ export function WinRateModule({ data, teamNumber, error, loading }: { data: Comp
 export function AverageScoreModule({ data, teamNumber, error, loading }: { data: ComparisonData | null, teamNumber: number, error: string | null, loading: boolean }) {
   if (loading) {
     return (
-      <div className="text-center py-8">
+      <div className="text-center py-8 h-full flex flex-col justify-center">
         <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mx-auto mb-4"></div>
         <p>Loading team comparison data...</p>
       </div>
